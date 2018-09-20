@@ -7,7 +7,7 @@ if (barcodes_to_print > 1480):
 	barcodes_to_print = 1480
 	print("Avery will only allow for 3000 rows, creating 37 sheets.")
 prefix = "GBIA"
-barcode_number = int(raw_input("Scan the last barcode you have printed:\n")[4:-1]) + 1
+barcode_number = int(raw_input("Enter the last barcode you have printed:\n")[4:-1]) + 1
 zero_pad = 1000000
 while (barcode_number < zero_pad):
 	zero_pad /= 10
@@ -24,8 +24,6 @@ for i in range(barcodes_to_print):
 	if (barcode_number < zero_pad):		
 		zero_pad *= 10
 		prefix = prefix[0:-1]
-	if (barcode_number > 9999999):
-		print("ALERT! WE HAVE REACHED OUR LIMIT FOR iARCHIVE RECORDS")
 		
 # leaves an extra newline, but Avery doesn't read these
 f.close()
