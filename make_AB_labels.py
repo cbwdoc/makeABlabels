@@ -1,6 +1,6 @@
 # CASEY DOUGHERTY, GEORGE BLOOD AUDIO, L.P. AUGUST 2018
 
-# PRINT OUT UP TO 37 SHEETS OF A/B BARCODES, JUST SCAN THE LAST BARCODE YOU HAVE
+# PRINT OUT UP TO 37 SHEETS OF A/B BARCODES, JUST ENTER THE LAST BARCODE YOU HAVE
 
 barcodes_to_print = int(raw_input("How many pages do you want to print?\n")) * 40
 if (barcodes_to_print > 1480):
